@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/Style.css">
+    <title>Store-Sales</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUAYVP0igaqnvQsAkwnQKZmWvnXL3w_RMSUw&usqp=CAU" alt="Salmon-Cookies"></li>
+                <li><a href="index.html">Salmon-Cookies</a></li>
+                <li><a href="sales.html">Store-Sales</a></li> <br>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="container" class="container"></div>
+        <form action="" id="sForm" autocomplete="off">
+            <fieldset>
+                <legend>Fill the info of the store!</legend>
+                <label for="name">Store name is: </label>
+                <input type="text" name="name" id="name" placeholder="Store name" maxlength="15" required><br>
+                <label for="minCust">Minimum Customers is: </label>
+                <input type="number" name="minCust" id="minCust" placeholder="min" min="0" required><br>
+                <label for="maxCust">Maximum Customers is: </label>
+                <input type="number" name="maxCust" id="maxCust" placeholder="max" min="0" required><br>
+                <label for="avgCookieSale">Avrage Cookie Sale is: </label>
+                <input type="number" name="avgCookieSale" id="avgCookieSale" placeholder="Avrage" min="0" required><br>
+                <input type="submit" value="Add a Store"><br>
+            </fieldset>
+        </form>
+        <script src="JS/app.js"></script>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
