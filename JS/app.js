@@ -113,8 +113,8 @@ function addStore(event) {
     let maxCust = event.target.maxCust.value;
     let avgCookieSale = event.target.avgCookieSale.value;
 
-    let newStore = new StoresName(name, minCust, maxCust, avgCookieSale);
-    newStore.renderTableBody();
+    let newStore = new cityStoreLocations(name, minCust, maxCust, avgCookieSale);
+    newStore.renderTBody();
     deleteFoot();
     renderTFooter();
     document.getElementById("sForm").reset();
